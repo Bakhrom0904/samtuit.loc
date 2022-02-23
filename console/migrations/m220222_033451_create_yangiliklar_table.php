@@ -3,7 +3,7 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%yangiliklar}}`.
+ * Handles the creation of table `{{%news}}`.
  */
 class m220222_033451_create_yangiliklar_table extends Migration
 {
@@ -12,7 +12,7 @@ class m220222_033451_create_yangiliklar_table extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('{{%yangiliklar}}', [
+        $this->createTable('{{%news}}', [
             'id' => $this->primaryKey(),
             'sarlavha' => $this->string(255),
             'rasm' => $this->string(255),
@@ -31,6 +31,6 @@ class m220222_033451_create_yangiliklar_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%yangiliklar}}');
+        $this->dropTable('{{%news}}');
     }
 }
