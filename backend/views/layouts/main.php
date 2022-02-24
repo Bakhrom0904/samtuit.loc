@@ -41,7 +41,7 @@ AppAsset::register($this);
                         <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
                     </div>
 
-                    <span class="nav-link-text ms-1">Yangiliklar</span>
+                    <span class="nav-link-text ms-1"><?=Yii::t("app","Yangiliklar");?></span>
                 </a>
             </li>
 
@@ -53,7 +53,7 @@ AppAsset::register($this);
                         <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
                     </div>
 
-                    <span class="nav-link-text ms-1">Elonlar</span>
+                    <span class="nav-link-text ms-1"><?=Yii::t("app","E`lonlar");?></span>
                 </a>
             </li>
 
@@ -65,7 +65,7 @@ AppAsset::register($this);
                         <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
                     </div>
 
-                    <span class="nav-link-text ms-1">Users</span>
+                    <span class="nav-link-text ms-1"><?=Yii::t("app","Foydalanuvchilar");?></span>
                 </a>
             </li>
 
@@ -80,6 +80,12 @@ AppAsset::register($this);
         <div class="container">
             <?=$content;?>
         </div>
+        <ul class="navbar-nav  justify-content-end">
+            <?= \lajax\languagepicker\widgets\LanguagePicker::widget([
+                'skin' => \lajax\languagepicker\widgets\LanguagePicker::SKIN_DROPDOWN,
+                'size' => \lajax\languagepicker\widgets\LanguagePicker::SIZE_LARGE
+            ]); ?>
+        </ul>
     </div>
 </main>
 

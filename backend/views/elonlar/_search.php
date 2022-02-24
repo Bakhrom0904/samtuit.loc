@@ -17,7 +17,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'sarlavha') ?>
+    <?= $form->field($model, 'sarlavha_uz') ?>
 
     <?= $form->field($model, 'rasm') ?>
 
@@ -34,6 +34,10 @@ use yii\widgets\ActiveForm;
     <?php // echo $form->field($model, 'toliq_en') ?>
 
     <?php // echo $form->field($model, 'vaqt') ?>
+
+    <?php // echo $form->field($model, 'sarlavha_ru') ?>
+
+    <?php // echo $form->field($model, 'sarlavha_en') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

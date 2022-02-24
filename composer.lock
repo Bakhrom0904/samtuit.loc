@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50114089d7de41b6fbcc4d646295169a",
+    "content-hash": "8656b58a5b40b228d9db4d8216533dde",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -367,6 +367,58 @@
                 "source": "https://github.com/ezyang/htmlpurifier/tree/master"
             },
             "time": "2020-06-29T00:56:53+00:00"
+        },
+        {
+            "name": "lajax/yii2-language-picker",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lajax/yii2-language-picker.git",
+                "reference": "350948b2ce866a6bca30b701922e6b97efad8f1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lajax/yii2-language-picker/zipball/350948b2ce866a6bca30b701922e6b97efad8f1f",
+                "reference": "350948b2ce866a6bca30b701922e6b97efad8f1f",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.11"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "lajax\\languagepicker\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Lajos Molnar",
+                    "email": "lajax.m@gmail.com"
+                }
+            ],
+            "description": "Yii2 Language Picker Widget",
+            "keywords": [
+                "extension",
+                "languagepicker",
+                "multilanguage",
+                "sample",
+                "translate",
+                "widget",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/lajax/yii2-language-picker/issues",
+                "source": "https://github.com/lajax/yii2-language-picker/tree/master"
+            },
+            "time": "2018-03-25T10:14:10+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

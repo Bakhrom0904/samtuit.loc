@@ -18,7 +18,7 @@ class YangiliklarSearch extends Yangiliklar
     {
         return [
             [['id'], 'integer'],
-            [['sarlavha', 'rasm', 'qisqa_uz', 'toliq_uz', 'qisqa_ru', 'toliq_ru', 'qisqa_en', 'toliq_en', 'vaqt'], 'safe'],
+            [['sarlavha_uz', 'rasm', 'qisqa_uz', 'toliq_uz', 'qisqa_ru', 'toliq_ru', 'qisqa_en', 'toliq_en', 'vaqt', 'sarlavha_ru', 'sarlavha_en'], 'safe'],
         ];
     }
 
@@ -62,14 +62,16 @@ class YangiliklarSearch extends Yangiliklar
             'vaqt' => $this->vaqt,
         ]);
 
-        $query->andFilterWhere(['like', 'sarlavha', $this->sarlavha])
+        $query->andFilterWhere(['like', 'sarlavha_uz', $this->sarlavha_uz])
             ->andFilterWhere(['like', 'rasm', $this->rasm])
             ->andFilterWhere(['like', 'qisqa_uz', $this->qisqa_uz])
             ->andFilterWhere(['like', 'toliq_uz', $this->toliq_uz])
             ->andFilterWhere(['like', 'qisqa_ru', $this->qisqa_ru])
             ->andFilterWhere(['like', 'toliq_ru', $this->toliq_ru])
             ->andFilterWhere(['like', 'qisqa_en', $this->qisqa_en])
-            ->andFilterWhere(['like', 'toliq_en', $this->toliq_en]);
+            ->andFilterWhere(['like', 'toliq_en', $this->toliq_en])
+            ->andFilterWhere(['like', 'sarlavha_ru', $this->sarlavha_ru])
+            ->andFilterWhere(['like', 'sarlavha_en', $this->sarlavha_en]);
 
         return $dataProvider;
     }

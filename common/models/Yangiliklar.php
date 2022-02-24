@@ -8,7 +8,7 @@ use Yii;
  * This is the model class for table "yangiliklar".
  *
  * @property int $id
- * @property string|null $sarlavha
+ * @property string|null $sarlavha_uz
  * @property string|null $rasm
  * @property string|null $qisqa_uz
  * @property string|null $toliq_uz
@@ -17,6 +17,8 @@ use Yii;
  * @property string|null $qisqa_en
  * @property string|null $toliq_en
  * @property string|null $vaqt
+ * @property string|null $sarlavha_ru
+ * @property string|null $sarlavha_en
  */
 class Yangiliklar extends \yii\db\ActiveRecord
 {
@@ -36,7 +38,7 @@ class Yangiliklar extends \yii\db\ActiveRecord
         return [
             [['qisqa_uz', 'toliq_uz', 'qisqa_ru', 'toliq_ru', 'qisqa_en', 'toliq_en'], 'string'],
             [['vaqt'], 'safe'],
-            [['sarlavha', 'rasm'], 'string', 'max' => 255],
+            [['sarlavha_uz', 'rasm', 'sarlavha_ru', 'sarlavha_en'], 'string', 'max' => 255],
         ];
     }
 
@@ -47,7 +49,7 @@ class Yangiliklar extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'sarlavha' => 'Sarlavha',
+            'sarlavha_uz' => 'Sarlavha Uz',
             'rasm' => 'Rasm',
             'qisqa_uz' => 'Qisqa Uz',
             'toliq_uz' => 'Toliq Uz',
@@ -56,6 +58,8 @@ class Yangiliklar extends \yii\db\ActiveRecord
             'qisqa_en' => 'Qisqa En',
             'toliq_en' => 'Toliq En',
             'vaqt' => 'Vaqt',
+            'sarlavha_ru' => 'Sarlavha Ru',
+            'sarlavha_en' => 'Sarlavha En',
         ];
     }
 }

@@ -63,17 +63,10 @@ AppAsset::register($this);
                     </div>
                     <div class="col-xl-7 col-lg-7 col-md-6 col-sm-8 mzero">
                         <div class="header-social-icon-list">
-                            <ul class="disnone">
-                                <li><img src="/politex/images/toplogo/flag.png" alt="" width="40%" height="20%"></li>&nbsp;
-                                <li><img src="/politex/images/toplogo/en.jpg" alt="" width="110%"></li>&nbsp;
-                                <li><img src="/politex/images/toplogo/ru.jpg" alt="" width="110%"></li>&nbsp;&nbsp;&nbsp;
-                                <li> <a href="http://farpi.edu.uz/"><i class="fa fa-graduation-cap"
-                                                                       aria-hidden="true"
-                                                                       style="color:#fff;font-size: 13px;">&nbsp;LMS</i></a>&nbsp;</li>
-                                <li><a href="http://hemis.ferpi.uz/dashboard/login"><i class="fa fa-user"
-                                                                                       aria-hidden="true" style="color:#fff;font-size: 13px;">&nbsp;ARD</i></a>
-                                </li>
-                            </ul>
+                            <?= \lajax\languagepicker\widgets\LanguagePicker::widget([
+                                'skin' => \lajax\languagepicker\widgets\LanguagePicker::SKIN_BUTTON,
+                                'size' => \lajax\languagepicker\widgets\LanguagePicker::SIZE_SMALL
+                            ]); ?>
                         </div>
                     </div>
                 </div>
@@ -87,7 +80,7 @@ AppAsset::register($this);
                             <img src="/politex/images/fpi-u.png">
                         </a>
                         <ul class="menuzord-menu" style="float: right;">
-                            <li><a href="javascript:void(0)" class="active">Institut haqida</a>
+                            <li><a href="javascript:void(0)" class="active"><?=Yii::t("app","Insitut haqida");?></a>
                                 <div class="megamenu">
                                     <div class="megamenu-row">
                                         <div class="col2">
@@ -159,7 +152,7 @@ AppAsset::register($this);
                                     </div>
                                 </div>
                             </li>
-                            <li class=""><a href="#">Qabul</a>
+                            <li class=""><a href="#"><?=Yii::t("app","Qabul");?></a>
                                 <ul class="dropdown">
                                     <li>
                                         <a href="#"></a>
@@ -173,7 +166,7 @@ AppAsset::register($this);
                                     <li><a href="#">F.A.Q</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Ilmiy izlanishlar va Innovatsiyalar</a>
+                            <li><a href="#"><?=Yii::t("app","Ilmiy izlanishlar va inovatsiyalar");?></a>
                                 <div class="megamenu container">
                                     <div class="megamenu-row">
                                         <div class="col4">
@@ -210,7 +203,7 @@ AppAsset::register($this);
                                     </div>
                                 </div>
                             </li>
-                            <li><a href="#">Ta'lim</a>
+                            <li><a href="#"><?=Yii::t("app","Ta`lim");?></a>
                                 <div class="megamenu container">
                                     <div class="megamenu-row">
                                         <div class="col3">
@@ -273,7 +266,7 @@ AppAsset::register($this);
                                 </div>
                             </li>
                             </li>
-                            <li><a href="#">Kampus haqida</a>
+                            <li><a href="#"><?=Yii::t("app","Kampus haqida");?></a>
                                 <div class="megamenu container">
                                     <div class="megamenu-row">
                                         <div class="col2">
@@ -306,7 +299,7 @@ AppAsset::register($this);
                                 </div>
                             </li>
                             <li>
-                                <a href="Aloqa.html">Aloqa</a>
+                                <a href="Aloqa.html"><?=Yii::t("app","Aloqa");?></a>
                             </li>
                         </ul>
                     </nav>

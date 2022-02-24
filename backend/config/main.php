@@ -10,9 +10,31 @@ return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
-    'bootstrap' => ['log'],
+    'bootstrap' => ['log','languagepicker',],
     'modules' => [],
+    'language' => 'uz',
     'components' => [
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\DbManager'
+        ],
+        'i18n' => [
+            'translations' => [
+                'app' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'sourceLanguage' => 'uz-UZ',
+                    'basePath' => __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'common/messages',
+                ],
+            ],
+        ],
+        'languagepicker' => [
+            'class' => 'lajax\languagepicker\Component',
+            // List of available languages (icons only)
+            'languages' => [
+                'en' => 'English',
+                'ru' => 'Русский',
+                'uz' => 'O`zbek',
+            ],
+        ],
         'request' => [
             'baseUrl'=>'',
             'csrfParam' => '_csrf-backend',

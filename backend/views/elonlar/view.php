@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'sarlavha',
+            'sarlavha_uz',
             'rasm',
             'qisqa_uz:ntext',
             'toliq_uz:ntext',
@@ -39,6 +39,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'qisqa_en:ntext',
             'toliq_en:ntext',
             'vaqt',
+            'sarlavha_ru',
+            'sarlavha_en',
         ],
     ]) ?>
 
