@@ -10,11 +10,12 @@ use yii\widgets\ActiveForm;
 
 <div class="yangiliklar-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['options'=>['enctype'=>'multipart/form-data']]); ?>
 
     <?= $form->field($model, 'sarlavha_uz')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'rasm')->textInput(['maxlength' => true]) ?>
+
 
     <?= $form->field($model, 'qisqa_uz')->textarea(['rows' => 6]) ?>
 
@@ -28,7 +29,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'toliq_en')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'vaqt')->textInput() ?>
+<!--    --><?//= $form->field($model, 'vaqt')->textInput() ?>
 
     <?= $form->field($model, 'sarlavha_ru')->textInput(['maxlength' => true]) ?>
 

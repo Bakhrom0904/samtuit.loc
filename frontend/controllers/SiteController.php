@@ -1,6 +1,8 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\Yangiliklar;
+use common\models\Elonlar;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -74,7 +76,9 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $yangiliklar=Yangiliklar::find()->orderBy("id DESC")->limit(3)->all();
+        $elonlar=Elonlar::find()->orderBy("id DESC")->limit(2)->all();
+        return $this->render("index",["yangiliklar"=>$yangiliklar,"elonlar"=>$elonlar]);
     }
 
     /**
@@ -257,4 +261,10 @@ class SiteController extends Controller
             'model' => $model
         ]);
     }
+    public function actionYangiliklar()
+    {
+        $yangiliklar=Yangiliklar::find()->orderBy("id DESC")->limit(4);
+        return $this->render("index",["yangiliklar"=>$yangiliklar]);
+    }
+
 }

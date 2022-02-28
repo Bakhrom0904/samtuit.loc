@@ -1,6 +1,7 @@
 <?php
 
 namespace common\models;
+use yii\web\UploadedFile;
 
 use Yii;
 
@@ -22,6 +23,7 @@ use Yii;
  */
 class Yangiliklar extends \yii\db\ActiveRecord
 {
+    public $eventImage;
     /**
      * {@inheritdoc}
      */
@@ -39,6 +41,7 @@ class Yangiliklar extends \yii\db\ActiveRecord
             [['qisqa_uz', 'toliq_uz', 'qisqa_ru', 'toliq_ru', 'qisqa_en', 'toliq_en'], 'string'],
             [['vaqt'], 'safe'],
             [['sarlavha_uz', 'rasm', 'sarlavha_ru', 'sarlavha_en'], 'string', 'max' => 255],
+            [['eventImage'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg'],
         ];
     }
 
@@ -62,4 +65,5 @@ class Yangiliklar extends \yii\db\ActiveRecord
             'sarlavha_en' => 'Sarlavha En',
         ];
     }
+
 }

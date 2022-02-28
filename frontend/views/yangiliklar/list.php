@@ -60,13 +60,8 @@
         </div>
     </div>
     <nav class="newspaginate">
-        <ul class="pagination">
-            <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-            <li class=""><a href="#">2 <span class="sr-only">(current)</span></a></li>
-            <li class=""><a href="#">3 <span class="sr-only">(current)</span></a></li>
-            <li class=""><a href="#">4 <span class="sr-only">(current)</span></a></li>
-            <li class=""><a href="#" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a></li>
-        </ul>
+       <?=\yii\widgets\LinkPager::widget(['pagination'=>$sahifa,
+           'maxButtonCount'=>7,
+           ]);?>
     </nav>
 </section>

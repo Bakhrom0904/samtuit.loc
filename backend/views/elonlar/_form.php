@@ -28,7 +28,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'toliq_en')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'vaqt')->textInput() ?>
+<!--    --><?//= $form->field($model, 'vaqt')->textInput() ?>
 
     <?= $form->field($model, 'sarlavha_ru')->textInput(['maxlength' => true]) ?>
 

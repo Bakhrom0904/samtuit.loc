@@ -23,7 +23,7 @@ AppAsset::register($this);
     <meta name="author" content="John Doe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php $this->registerCsrfMetaTags() ?>
-    <title><?="Farg'ona Politexnika Instituti rasmiy web sayti"; ?></title>
+    <title>  Muhammad al-Xorazmiy nomidagiToshkent Axborot Texnologiyalari Universiteti Samarqand filiali</title>
     <link href="/politex/images/fpi-top.png" rel="shortcut icon" type="image/png">
     <?php $this->head() ?>
 
@@ -76,9 +76,7 @@ AppAsset::register($this);
             <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
                 <div class="container-fluid">
                     <nav id="menuzord-right" class="menuzord default">
-                        <a class="menuzord-brand pull-left flip" href="index.html">
-                            <img src="/politex/images/fpi-u.png">
-                        </a>
+
                         <ul class="menuzord-menu" style="float: right;">
                             <li><a href="javascript:void(0)" class="active"><?=Yii::t("app","Insitut haqida");?></a>
                                 <div class="megamenu">
@@ -342,8 +340,8 @@ AppAsset::register($this);
             <div class="row ">
                 <div class="col-sm-6 col-md-4 ">
                     <div class="widget dark whtclr2 ">
-                        <img alt=" " width="80% " src="/politex/images/ferpi_l4mode.png ">
-                        <p class="font-16 mb-10 ">Farg'ona Politexnika Institutining rasmiy web sayti</p>
+
+                        <p class="font-16 mb-10 ">Toshkent axborot texnologiyalari universiteti Samarqand filliali veb sayti</p>
                         <div class="whtclr "><a class="font-14 " href="institut.html "><i
                                         class="fa fa-angle-double-right "></i>
                                 Batafsil</a>
@@ -370,15 +368,13 @@ AppAsset::register($this);
                         <h5 class="widget-title line-bottom "> Manzil</h5>
                         <ul class="list-border lstmode ">
                             <li>
-                                <a href="# "> <i class="fa fa-phone ">&nbsp;8 (373) 241 12 06</i></a>
+                                <a href="# "> <i class="fa fa-phone ">&nbsp;+998662322929</i></a>
                             </li>
                             <li>
-                                <a href="# "> <i class="fa fa-graduation-cap ">&nbsp;ferpi_info@edu.uz</i></a>
+                                <a href="# "> <i class="fa fa-graduation-cap ">&nbsp;info@samtuit.uz</i></a>
                             </li>
                             <li>
-                                <a href="# " class="lineheight-20 "> <i class="fa fa-home ">&nbsp;150107, Farg'ona
-                                        shahar, Farg'ona
-                                        ko'chasi 86-uy</i> </a>
+                                <a href="# " class="lineheight-20 "> <i class="fa fa-home ">Samarqand shahar Ibn Sino ko'chasi 2 A uy</i> </a>
                             </li>
                             <li>
                                 <a href="# "> <i class="fa fa-building-o ">&nbsp;Avtobus yo'nalishlari: 8, 8A, 9,
@@ -392,10 +388,9 @@ AppAsset::register($this);
                     <div class="widget dark ">
                         <h5 class="widget-title line-bottom ">Xarita</h5>
                         <ul class="list angle-double-right list-border ">
-                            <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d48610.898516056266!2d71.77083745525862!3d40.404837417677655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d40.3931136!2d71.84056319999999!4m5!1s0x38bb82d713bba655%3A0xd9b610b729b574fb!2sfarpi!3m2!1d40.422005899999995!2d71.7733192!5e0!3m2!1sru!2s!4v1617017751872!5m2!1sru!2s "
-                                    width="350 " height="300 " style="border:0; " allowfullscreen=" "
-                                    loading="lazy "></iframe>
+                            <iframe class="map"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1773.860846388476!2d66.98123068663902!3d39.67934908334424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d188e87ff9341%3A0xc519336839ee6ba7!2zVEFUVSBTYW1hcmthbmQsIFNhbWFycWFuZCwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1624598540989!5m2!1sru!2s"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </ul>
                     </div>
                 </div>
