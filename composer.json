@@ -18,7 +18,8 @@
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
-        "lajax/yii2-language-picker": "^1.2"
+        "lajax/yii2-language-picker": "^1.2",
+        "mdmsoft/yii2-admin": "~1.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
