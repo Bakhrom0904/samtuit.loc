@@ -19,7 +19,8 @@
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "lajax/yii2-language-picker": "^1.2",
-        "mdmsoft/yii2-admin": "~1.0"
+        "mdmsoft/yii2-admin": "2.x-dev"
+
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
@@ -36,6 +37,9 @@
         "process-timeout": 1800,
         "fxp-asset": {
             "enabled": false
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
         }
     },
     "repositories": [
