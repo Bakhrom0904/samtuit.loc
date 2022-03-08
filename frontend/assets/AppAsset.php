@@ -12,7 +12,7 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-       "/politex/css/bootstrap.min.css",
+       "politex/css/bootstrap.min.css",
         "/politex/css/jquery-ui.min.css",
         "/politex/css/animate.css",
         "/politex/css/css-plugin-collections.css",

@@ -12,9 +12,9 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log','languagepicker',],
     'modules' => [  'admin' => [
-//        'class' => 'mdm\admin\Module',
-//        'layout' => 'left-menu',
-//        'mainLayout' => '@app/views/layouts/main.php',
+     'class' => 'mdm\admin\Module',
+        'layout' => 'left-menu',
+        'mainLayout' => '@app/views/layouts/main.php',
 
     ]],
     'language' => 'uz',
@@ -75,12 +75,12 @@ return [
 
     ],
     'params' => $params,
-//    'as access' => [
-//        'class' => 'mdm\admin\components\AccessControl',
-//        'allowActions' => [
-//         'site/*',
-//           'admin/*',
-//
-//        ]
-//    ],
+    'as access' => [
+        'class' => 'mdm\admin\components\AccessControl',
+        'allowActions' => [
+         'site/*',
+           'admin/*',
+
+        ]
+    ],
 ];

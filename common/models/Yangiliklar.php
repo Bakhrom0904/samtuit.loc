@@ -24,6 +24,7 @@ use Yii;
 class Yangiliklar extends \yii\db\ActiveRecord
 {
     public $eventImage;
+
     /**
      * {@inheritdoc}
      */
@@ -42,6 +43,7 @@ class Yangiliklar extends \yii\db\ActiveRecord
             [['vaqt'], 'safe'],
             [['sarlavha_uz', 'rasm', 'sarlavha_ru', 'sarlavha_en'], 'string', 'max' => 255],
             [['eventImage'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg'],
+
         ];
     }
 
