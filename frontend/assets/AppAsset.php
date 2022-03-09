@@ -48,7 +48,7 @@ class AppAsset extends AssetBundle
        "/politex/js/revolution-slider/js/extensions/revolution.extension.video.min.js ",
     ];
     public $depends = [
-//        'yii\web\YiiAsset',
-//        'yii\bootstrap\BootstrapAsset',
+        'yii\web\YiiAsset',
+        'yii\bootstrap\BootstrapAsset',
     ];
 }
