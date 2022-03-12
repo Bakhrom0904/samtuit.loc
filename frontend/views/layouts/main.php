@@ -62,12 +62,12 @@ AppAsset::register($this);
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-7 col-md-6 col-sm-8 mzero">
-
+                        <div class="header-social-icon-list">
                             <?= \lajax\languagepicker\widgets\LanguagePicker::widget([
                                 'skin' => \lajax\languagepicker\widgets\LanguagePicker::SKIN_DROPDOWN,
                                 'size' => \lajax\languagepicker\widgets\LanguagePicker::SIZE_LARGE
                             ]); ?>
-                       
+                        </div>
                     </div>
                 </div>
             </div>
