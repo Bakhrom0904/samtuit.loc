@@ -11,7 +11,7 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log','languagepicker',],
-    'modules' => [  'admin' => [
+    'modules' => [  'admn' => [
      'class' => 'mdm\admin\Module',
         'layout' => 'left-menu',
         'mainLayout' => '@app/views/layouts/main.php',
@@ -79,7 +79,7 @@ return [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
          'site/*',
-           'admn/*',
+           'admin/*',
 
         ]
     ],
