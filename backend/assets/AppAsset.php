@@ -27,7 +27,7 @@ class AppAsset extends AssetBundle
         "loyiha/js/plugins/smooth-scrollbar.min.js",
     ];
     public $depends = [
-//        'yii\web\YiiAsset',
-//        'yii\bootstrap\BootstrapAsset',
+        'yii\web\YiiAsset',
+        'yii\bootstrap\BootstrapAsset',
     ];
 }
