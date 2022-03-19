@@ -11,10 +11,11 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log','languagepicker',],
-    'modules' => [  'admn' => [
-     'class' => 'mdm\admin\Module',
-        'layout' => 'left-menu',
-        'mainLayout' => '@app/views/layouts/main.php',
+    'modules' => [  
+	'admn' => [
+     		'class' => 'mdm\admin\Module',
+        	'layout' => 'left-menu',
+        	'mainLayout' => '@app/views/layouts/main.php',
 
     ]],
     'language' => 'uz',
@@ -41,7 +42,7 @@ return [
             ],
         ],
         'request' => [
-            'baseUrl'=>'',
+            'baseUrl'=>'/admin',
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
