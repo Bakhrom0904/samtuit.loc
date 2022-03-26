@@ -1,0 +1,382 @@
+2022-03-26 20:30:00 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: session_name(): Cannot change session name when headers already sent in C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\Session.php:357
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError()
+#1 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\Session.php(357): session_name()
+#2 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Component.php(180): yii\web\Session->setName()
+#3 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set()
+#4 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure()
+#5 [internal function]: yii\base\BaseObject->__construct()
+#6 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#7 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#8 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#9 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject()
+#10 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Module.php(766): yii\di\ServiceLocator->get()
+#11 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\Application.php(178): yii\base\Module->get()
+#12 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\User.php(689): yii\web\Application->getSession()
+#13 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\User.php(198): yii\web\User->renewAuthStatus()
+#14 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\User.php(366): yii\web\User->getIdentity()
+#15 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#16 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get()
+#17 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#18 [internal function]: yii\base\BaseObject->__construct()
+#19 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#20 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#21 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#22 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2-debug\src\Module.php(255): yii\BaseYii::createObject()
+#23 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2-debug\src\Module.php(226): yii\debug\Module->initPanels()
+#24 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#25 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct()
+#26 [internal function]: yii\base\Module->__construct()
+#27 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs()
+#28 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#29 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#30 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject()
+#31 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule()
+#32 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#33 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#34 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#35 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct()
+#36 C:\OpenServer\domains\samtuit.loc\backend\web\index.php(17): yii\base\Application->__construct()
+#37 {main}
+2022-03-26 20:29:59 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'language' => '82fd23369a18f37fc3a216dd91266f5297e6815a39ad52dc8f2d981366753953a:2:{i:0;s:8:\"language\";i:1;s:2:\"uz\";}'
+    '_identity-backend' => 'bd90c3d015a228d1550e58bf581fc0489dd96b22787a8b6342c1466b1f183bf9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[6,\"sbSd0-tzkgkFVx96JKG8U1HwCcOYPAWk\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP2' => 'on'
+    'H2PUSH' => 'on'
+    'H2_PUSH' => 'on'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => ''
+    'H2_STREAM_TAG' => '000'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'samtuitadmin.loc'
+    'SSL_SERVER_S_DN_CN' => 'localhost'
+    'SSL_SERVER_I_DN_CN' => 'ospanel'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.43'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/1.1.1f'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '1'
+    'SSL_SERVER_M_SERIAL' => 'AF90673611D8DD9B'
+    'SSL_SERVER_V_START' => 'Dec 23 10:54:34 2016 GMT'
+    'SSL_SERVER_V_END' => 'Dec 20 10:54:34 2031 GMT'
+    'SSL_SERVER_S_DN' => 'CN=localhost'
+    'SSL_SERVER_I_DN' => 'CN=ospanel'
+    'SSL_SERVER_A_KEY' => 'rsaEncryption'
+    'SSL_SERVER_A_SIG' => 'sha256WithRSAEncryption'
+    'SSL_SESSION_ID' => '305862f96b0390d94c444b308c78841445dcab77282ea6e4c08c3140bafb4932'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => 'language=82fd23369a18f37fc3a216dd91266f5297e6815a39ad52dc8f2d981366753953a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22uz%22%3B%7D; _identity-backend=bd90c3d015a228d1550e58bf581fc0489dd96b22787a8b6342c1466b1f183bf9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22sbSd0-tzkgkFVx96JKG8U1HwCcOYPAWk%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'samtuitadmin.loc'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\database\\PostgreSQL-10.12\\bin;c:\\openserver\\modules\\database\\PostgreSQL-10.12\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'samtuitadmin.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/samtuit.loc/backend/web'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/samtuit.loc/backend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/samtuit.loc/backend/web/index.php'
+    'REMOTE_PORT' => '62910'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648315799.7955
+    'REQUEST_TIME' => 1648315799
+    'argv' => []
+    'argc' => 0
+]
+2022-03-26 20:32:48 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: session_name(): Cannot change session name when headers already sent in C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\Session.php:357
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError()
+#1 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\Session.php(357): session_name()
+#2 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Component.php(180): yii\web\Session->setName()
+#3 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set()
+#4 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure()
+#5 [internal function]: yii\base\BaseObject->__construct()
+#6 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#7 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#8 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#9 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject()
+#10 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Module.php(766): yii\di\ServiceLocator->get()
+#11 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\Application.php(178): yii\base\Module->get()
+#12 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\User.php(689): yii\web\Application->getSession()
+#13 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\User.php(198): yii\web\User->renewAuthStatus()
+#14 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\User.php(366): yii\web\User->getIdentity()
+#15 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#16 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get()
+#17 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#18 [internal function]: yii\base\BaseObject->__construct()
+#19 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#20 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#21 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#22 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2-debug\src\Module.php(255): yii\BaseYii::createObject()
+#23 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2-debug\src\Module.php(226): yii\debug\Module->initPanels()
+#24 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#25 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct()
+#26 [internal function]: yii\base\Module->__construct()
+#27 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs()
+#28 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#29 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#30 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject()
+#31 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule()
+#32 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#33 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#34 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#35 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct()
+#36 C:\OpenServer\domains\samtuit.loc\backend\web\index.php(17): yii\base\Application->__construct()
+#37 {main}
+2022-03-26 20:32:48 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'language' => '82fd23369a18f37fc3a216dd91266f5297e6815a39ad52dc8f2d981366753953a:2:{i:0;s:8:\"language\";i:1;s:2:\"uz\";}'
+    '_identity-backend' => 'bd90c3d015a228d1550e58bf581fc0489dd96b22787a8b6342c1466b1f183bf9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[6,\"sbSd0-tzkgkFVx96JKG8U1HwCcOYPAWk\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP2' => 'on'
+    'H2PUSH' => 'on'
+    'H2_PUSH' => 'on'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => ''
+    'H2_STREAM_TAG' => '000'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'samtuitadmin.loc'
+    'SSL_SERVER_S_DN_CN' => 'localhost'
+    'SSL_SERVER_I_DN_CN' => 'ospanel'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.43'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/1.1.1f'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '1'
+    'SSL_SERVER_M_SERIAL' => 'AF90673611D8DD9B'
+    'SSL_SERVER_V_START' => 'Dec 23 10:54:34 2016 GMT'
+    'SSL_SERVER_V_END' => 'Dec 20 10:54:34 2031 GMT'
+    'SSL_SERVER_S_DN' => 'CN=localhost'
+    'SSL_SERVER_I_DN' => 'CN=ospanel'
+    'SSL_SERVER_A_KEY' => 'rsaEncryption'
+    'SSL_SERVER_A_SIG' => 'sha256WithRSAEncryption'
+    'SSL_SESSION_ID' => '68d4eac6288ebaf3820b8af72ac138029577368dac48b6e39ab89cf6a972cb40'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => 'language=82fd23369a18f37fc3a216dd91266f5297e6815a39ad52dc8f2d981366753953a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22uz%22%3B%7D; _identity-backend=bd90c3d015a228d1550e58bf581fc0489dd96b22787a8b6342c1466b1f183bf9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22sbSd0-tzkgkFVx96JKG8U1HwCcOYPAWk%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'samtuitadmin.loc'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\database\\PostgreSQL-10.12\\bin;c:\\openserver\\modules\\database\\PostgreSQL-10.12\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'samtuitadmin.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/samtuit.loc/backend/web'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/samtuit.loc/backend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/samtuit.loc/backend/web/index.php'
+    'REMOTE_PORT' => '60735'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648315967.2131
+    'REQUEST_TIME' => 1648315967
+    'argv' => []
+    'argc' => 0
+]
+2022-03-26 20:33:22 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: session_name(): Cannot change session name when headers already sent in C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\Session.php:357
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError()
+#1 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\Session.php(357): session_name()
+#2 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Component.php(180): yii\web\Session->setName()
+#3 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set()
+#4 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure()
+#5 [internal function]: yii\base\BaseObject->__construct()
+#6 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#7 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#8 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#9 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject()
+#10 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Module.php(766): yii\di\ServiceLocator->get()
+#11 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\Application.php(178): yii\base\Module->get()
+#12 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\User.php(689): yii\web\Application->getSession()
+#13 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\User.php(198): yii\web\User->renewAuthStatus()
+#14 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\User.php(366): yii\web\User->getIdentity()
+#15 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#16 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get()
+#17 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#18 [internal function]: yii\base\BaseObject->__construct()
+#19 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#20 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#21 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#22 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2-debug\src\Module.php(255): yii\BaseYii::createObject()
+#23 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2-debug\src\Module.php(226): yii\debug\Module->initPanels()
+#24 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#25 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct()
+#26 [internal function]: yii\base\Module->__construct()
+#27 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs()
+#28 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#29 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#30 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject()
+#31 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule()
+#32 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#33 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#34 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#35 C:\OpenServer\domains\samtuit.loc\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct()
+#36 C:\OpenServer\domains\samtuit.loc\backend\web\index.php(17): yii\base\Application->__construct()
+#37 {main}
+2022-03-26 20:33:21 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'language' => '82fd23369a18f37fc3a216dd91266f5297e6815a39ad52dc8f2d981366753953a:2:{i:0;s:8:\"language\";i:1;s:2:\"uz\";}'
+    '_identity-backend' => 'bd90c3d015a228d1550e58bf581fc0489dd96b22787a8b6342c1466b1f183bf9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[6,\"sbSd0-tzkgkFVx96JKG8U1HwCcOYPAWk\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP2' => 'on'
+    'H2PUSH' => 'on'
+    'H2_PUSH' => 'on'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => ''
+    'H2_STREAM_TAG' => '000'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'samtuitadmin.loc'
+    'SSL_SERVER_S_DN_CN' => 'localhost'
+    'SSL_SERVER_I_DN_CN' => 'ospanel'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.43'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/1.1.1f'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '1'
+    'SSL_SERVER_M_SERIAL' => 'AF90673611D8DD9B'
+    'SSL_SERVER_V_START' => 'Dec 23 10:54:34 2016 GMT'
+    'SSL_SERVER_V_END' => 'Dec 20 10:54:34 2031 GMT'
+    'SSL_SERVER_S_DN' => 'CN=localhost'
+    'SSL_SERVER_I_DN' => 'CN=ospanel'
+    'SSL_SERVER_A_KEY' => 'rsaEncryption'
+    'SSL_SERVER_A_SIG' => 'sha256WithRSAEncryption'
+    'SSL_SESSION_ID' => '4c823fa57fa47111509acef2e68fd99f80c0b0e729c1e0d73759141de5a17af0'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => 'language=82fd23369a18f37fc3a216dd91266f5297e6815a39ad52dc8f2d981366753953a%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A2%3A%22uz%22%3B%7D; _identity-backend=bd90c3d015a228d1550e58bf581fc0489dd96b22787a8b6342c1466b1f183bf9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22sbSd0-tzkgkFVx96JKG8U1HwCcOYPAWk%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'samtuitadmin.loc'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\database\\PostgreSQL-10.12\\bin;c:\\openserver\\modules\\database\\PostgreSQL-10.12\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'samtuitadmin.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/samtuit.loc/backend/web'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/samtuit.loc/backend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/samtuit.loc/backend/web/index.php'
+    'REMOTE_PORT' => '60743'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1648316001.7594
+    'REQUEST_TIME' => 1648316001
+    'argv' => []
+    'argc' => 0
+]
