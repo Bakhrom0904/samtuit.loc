@@ -8,7 +8,6 @@ use backend\models\ElonlarSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\web\UploadedFile;
 
 /**
  * ElonlarController implements the CRUD actions for Elonlar model.
@@ -68,11 +67,7 @@ class ElonlarController extends Controller
         $model = new Elonlar();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
-            if ($model->upload()) {
-                $model->save();
-                return $this->redirect(['view', 'id' => $model->id]);
-            }
+            return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('create', [

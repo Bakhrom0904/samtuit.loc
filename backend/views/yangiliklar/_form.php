@@ -14,7 +14,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'sarlavha_uz')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'imageFile')->fileInput() ?>
+    <?= $form->field($model, 'rasm')->textInput(['maxlength' => true]) ?>
 
 
     <?= $form->field($model, 'qisqa_uz')->textarea(['rows' => 6]) ?>

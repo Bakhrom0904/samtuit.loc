@@ -25,7 +25,6 @@ class Elonlar extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
-    public $imageFile;
     public static function tableName()
     {
         return 'elonlar';
@@ -40,7 +39,6 @@ class Elonlar extends \yii\db\ActiveRecord
             [['qisqa_uz', 'toliq_uz', 'qisqa_ru', 'toliq_ru', 'qisqa_en', 'toliq_en'], 'string'],
             [['vaqt'], 'safe'],
             [['sarlavha_uz', 'rasm', 'sarlavha_ru', 'sarlavha_en'], 'string', 'max' => 255],
-            [['imageFile'], 'file',  'extensions' => 'png, jpg'],
         ];
     }
 
@@ -63,15 +61,5 @@ class Elonlar extends \yii\db\ActiveRecord
             'sarlavha_ru' => 'Sarlavha Ru',
             'sarlavha_en' => 'Sarlavha En',
         ];
-    }
-    public function upload()
-    {
-        $this->rasm='uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extension;
-        if ($this->validate()) {
-            $this->imageFile->saveAs(Yii::getAlias('@frontend') . '/web/uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extension, false);
-            return true;
-        } else {
-            return false;
-        }
     }
 }
