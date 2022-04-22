@@ -12,7 +12,7 @@ class m220222_033451_create_yangiliklar_table extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('{{%news}}', [
+        $this->createTable('{{%yangiliklar}}', [
             'id' => $this->primaryKey(),
             'sarlavha' => $this->string(255),
             'rasm' => $this->string(255),
@@ -31,6 +31,6 @@ class m220222_033451_create_yangiliklar_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%news}}');
+        $this->dropTable('{{%yangiliklar}}');
     }
 }
