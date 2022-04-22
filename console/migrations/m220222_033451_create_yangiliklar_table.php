@@ -14,7 +14,7 @@ class m220222_033451_create_yangiliklar_table extends Migration
     {
         $this->createTable('{{%yangiliklar}}', [
             'id' => $this->primaryKey(),
-            'sarlavha' => $this->string(255),
+            'sarlavha_uz' => $this->string(255),
             'rasm' => $this->string(255),
             'qisqa_uz' => $this->text(),
             'toliq_uz' => $this->text(),

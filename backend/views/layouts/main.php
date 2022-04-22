@@ -9,6 +9,7 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 ?>
@@ -35,7 +36,7 @@ AppAsset::register($this);
         <ul class="navbar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="/yangiliklar/index">
+                <a class="nav-link " href="<?= Url::to(['yangiliklar/index']) ?>">
 
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
@@ -47,7 +48,7 @@ AppAsset::register($this);
 
 
             <li class="nav-item">
-                <a class="nav-link " href="/elonlar/index">
+                <a class="nav-link " href="<?=Url::to(['elonlar/index']);?>">
 
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
@@ -60,7 +61,7 @@ AppAsset::register($this);
 
 
             <li class="nav-item">
-                <a class="nav-link " href="/user/index">
+                <a class="nav-link " href="<?=Url::to(['user/index']) ?>">
 
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-credit-card text-success text-sm opacity-10"></i>

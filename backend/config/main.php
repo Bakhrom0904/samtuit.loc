@@ -68,6 +68,7 @@ return [
         ],
 
         'urlManager' => [
+//            'scriptUrl'=>'/backend/index.php',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
@@ -79,8 +80,8 @@ return [
     'as access' => [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
-         'site/*',
-           'admn/*',
+//         'site/*',
+//           'admn/*',
 
         ]
     ],
