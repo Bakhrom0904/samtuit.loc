@@ -261,10 +261,10 @@ class SiteController extends Controller
             'model' => $model
         ]);
     }
-    public function actionYangiliklar()
-    {
-        $yangiliklar=Yangiliklar::find()->orderBy("id DESC")->limit(4);
-        return $this->render("index",["yangiliklar"=>$yangiliklar]);
-    }
+//    public function actionYangiliklar()
+//    {
+//        $yangiliklar=Yangiliklar::find()->orderBy("id DESC")->limit(4);
+//        return $this->render("index",["yangiliklar"=>$yangiliklar]);
+//    }
 
 }

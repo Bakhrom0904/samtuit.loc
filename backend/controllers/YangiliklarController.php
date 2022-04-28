@@ -8,6 +8,7 @@ use backend\models\YangiliklarSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * YangiliklarController implements the CRUD actions for Yangiliklar model.
@@ -66,8 +67,13 @@ class YangiliklarController extends Controller
     {
         $model = new Yangiliklar();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post()) ) {
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+            if ($model->upload()){
+                $model->save();
+                //var_dump($model->errors);
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         }
 
         return $this->render('create', [

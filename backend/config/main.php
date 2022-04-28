@@ -12,7 +12,7 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log','languagepicker',],
     'modules' => [  
-	'admn' => [
+	'admin' => [
      		'class' => 'mdm\admin\Module',
         	'layout' => 'left-menu',
         	'mainLayout' => '@app/views/layouts/main.php',
@@ -42,7 +42,7 @@ return [
             ],
         ],
         'request' => [
-            'baseUrl'=>'/admin',
+            'baseUrl'=>'',
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
@@ -81,7 +81,7 @@ return [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
 //         'site/*',
-//           'admn/*',
+//           'admin/*',
 
         ]
     ],

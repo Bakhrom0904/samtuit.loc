@@ -33,12 +33,12 @@
                         <div class="gallery-item wheel">
                             <div class="work-gallery">
                                 <div class="gallery-thumb">
-                                    <img class="img-fullwidth" alt="" src="<?=$yangilik->rasm;?>">
+                                    <img class="img-fullwidth" alt="" src="<?= Yii::getAlias('@web') . '/rasmlar/'.$yangilik->rasm ?>">
                                     <div class="gallery-overlay"></div>
                                     <div class="gallery-contect">
                                         <ul class="styled-icons icon-bordered icon-circled icon-sm">
                                             <li><a href="#"><i class="fa fa-link"></i></a></li>
-                                            <li><a data-rel="prettyPhoto" href="<?=$yangilik->rasm;?>"><i class="fa fa-arrows"></i></a></li>
+                                            <li><a data-rel="prettyPhoto" href="<?= Yii::getAlias('@web') . '/rasmlar/'.$yangilik->rasm ?>"><i class="fa fa-arrows"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
